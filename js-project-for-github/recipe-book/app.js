@@ -30,6 +30,7 @@ recipeLinkEl.innerText= 'view Recipe';
 recipeItmEl.appendChild(recipeimgEl);
 recipeItmEl.appendChild(recipeTitleEl);
 recipeItmEl.appendChild(recipePEl);
+recipeItmEl.appendChild(recipeLinkEl);
 
 recipeListEl.appendChild(recipeItmEl);
       })
