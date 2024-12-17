@@ -1,0 +1,123 @@
+body{
+       margin: 0;
+       padding: 0;
+       font-family: Arial, Helvetica, sans-serif;
+       overflow-x: hidden;
+}
+.container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       
+}
+header{
+       background-color: blue;
+       font-size: 24px;
+       color: white;
+       text-align: center;
+       width: 100%;
+       margin: 0;
+       padding: 5px;
+       text-align: center;
+       display: block;
+       
+       
+      
+}
+.bookList-item{
+       background-color: bisque;
+       margin: 0;
+       padding: 0;
+       
+       box-shadow: 0 0 20px rgb(242, 110, 110);
+       margin-top: 40px;
+       
+       
+       
+}
+.recipe-list{
+       padding: 40px;
+       display: flex;
+       flex-direction: column;
+}
+.recipe-item{
+       display: flex;
+       flex-direction: row;
+       margin-top: 30px;
+       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+       list-style: none;
+       border-radius: 10px;
+       overflow: hidden;
+       padding-right: 10px;
+       margin-bottom: 20px;
+}
+.recipe-item img{
+       width: 150px;
+       height: 150px;
+}
+.recipe-item h1{
+      
+       max-width: 200px;
+       font-size: 24px;
+       
+       
+}
+
+.recipe-item p{
+       
+       margin: 0;
+       padding: 10px;
+       color: #777;
+       max-width: 530px;
+       width: 530px;
+}
+.recipe-item a{
+       margin-left: 10px;
+       text-decoration: none;
+       background-color: black;
+       color: white;
+       text-align: center;
+       height: 30px;
+       font-size: 14px;
+       transition: background-color 0.4 ease;
+}
+.recipe-item a:hover{
+       background-color: aquamarine;
+       color: red;
+}
+.recipe-item > :not(:first-child){
+       margin-left: 30px;
+       
+}
+
+
+@media screen and (max-width: 768px) {
+       .recipe-item{
+              flex-direction: column;
+              margin-right: 0;
+              padding-right: 0;
+              justify-content: center;
+              align-items: center;
+       }
+       .recipe-item img{
+              width: 100%;
+              height: auto;
+       }
+       .recipe-item a{
+              display: inline-block;
+              width: 100%;
+             
+       }
+      
+       .recipe-list{
+              margin: 0;
+              padding: 0;
+       }
+       .recipe-item > :not(:first-child){
+              margin-left: 0;
+              
+       }
+       
+}
