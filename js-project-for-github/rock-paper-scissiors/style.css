@@ -1,0 +1,62 @@
+body{
+       margin: 0;
+       padding: 0;
+       font-family: 'Times New Roman', Times, serif;
+}
+.container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       max-width: 600px;
+       margin: 0 auto;
+       margin-top: 50px;
+}
+h1{
+       font-size: 4rem;
+}
+
+h2{
+       font-size: 2rem;
+       text-align: center;
+       margin-top: 0;
+}
+#buttons{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+button{
+       font-size: 4rem;
+       margin: 10px;
+       border-radius: 10px;
+       transition: all 0.5 ease-in-out;
+       border: none;
+       text-align: center;
+}
+button:hover{
+       opacity: 0.5;
+}
+#rock{
+       background-color: aqua;
+       color: black;
+}
+#paper{
+       background-color: blue;
+       color: red;
+}
+#scissors{
+       background-color: blueviolet;
+       color: brown;
+}
+p{
+       font-size: 2rem;
+}
+#user-score{
+       color: blue;
+       font-weight: 600;
+}
+#computer-score{
+       color: red;
+       font-weight: 600;
+}
