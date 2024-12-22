@@ -1,0 +1,50 @@
+body{
+       min-height: 100vh;
+       width: 100hv;
+       margin: 0;
+       padding: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       background-color: rgb(249, 243, 167);
+       font-family: "Poppins", sans-serif;
+}
+#timer{
+       font-size: 7rem;
+       color: blue;
+       text-shadow: 2px 2px #f8a5c2;
+       font-weight: 700;
+       text-align: center;
+       margin: 40px auto;
+}
+button{
+       transition: all 0.4 ease-in-out;
+       width: 10rem;
+       height: 5rem;
+       font-size: 2rem;
+       border: none;
+       border-radius: 10px;
+       margin: 20px;
+       background-color: brown;
+       color: blue;
+}
+button:hover{
+       opacity: 0.6;
+}
+   
+       button[disabled]{
+              background-color: rgb(246, 246, 237);
+       }
+       @media screen and (max-width: 520px) {
+              #timer{
+                     font-size: 4rem;
+              }
+              button{
+                     font-size: 1.5rem;
+              }
+
+
+       }
+
