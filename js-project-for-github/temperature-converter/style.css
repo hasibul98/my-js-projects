@@ -1,0 +1,31 @@
+body{
+       margin: 0;
+       padding: 0;
+       height: 100vh;
+       background: linear-gradient(to left bottom, lightgreen, lightblue);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: darkcyan;
+}
+.tem-container{
+       background: rgba(255,255,255,0.3);
+       width: 500px;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+       padding: 50px;
+}
+.temp{
+       margin: 30px;
+}
+label{
+       margin-right: 10px;
+}
+input{
+       margin-left: 10px;
+       float: right;
+       width: 200px;
+       height: 30px;
+       outline: none;
+       border: none;
+       
+}
