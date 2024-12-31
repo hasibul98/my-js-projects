@@ -22,8 +22,7 @@ prevBtnEl.addEventListener('click', ()=>{
        currentStep--;
        if(currentStep < 1 ){
               currentStep = 1;
-              prevBtnEl.disabled = true;
-              nextBtnEl.disabled = false;
+              
        }
        updateStepProgress();
 })
