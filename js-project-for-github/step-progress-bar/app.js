@@ -9,7 +9,7 @@ nextBtnEl.addEventListener('click',()=>{
        currentStep++;
        // console.log(stepsEl.length);
        // console.log(stepsEl);
-       if(currentStep >= stepsEl.length){
+       if(currentStep > stepsEl.length){
               currentStep = stepsEl.length;
               
               
