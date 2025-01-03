@@ -1,0 +1,86 @@
+*{
+       margin: 0;
+       padding: 0;
+}
+body{
+       width: 100vw;
+       font-family: sans-serif;
+       background: #ebebeb;
+}
+.fa-bars{
+       position: fixed;
+       top: 2rem;
+       right: 3rem;
+       font-size: 5rem;
+       color: #e94949;
+       cursor: pointer;
+}
+.sidebar-container{
+       width: 100%;
+       /* padding: 50px; */
+}
+.sidebar{
+       background-color: #e9d7cd;
+       width: 30rem;
+       height: 100vh;
+       margin: 0;
+       padding: 0;
+       display: flex;
+       justify-content: space-between;
+       transform: translateX(-70rem);
+       transition: transform 0.4s linear;
+}
+.sidebar.active{
+       transform: translateX(0);
+}
+
+
+.logo{
+       width: 8rem;
+       
+}
+.sidebar-header{
+       display: flex;
+       justify-content: space-between;
+}
+.fa-times{
+       font-size: 30px;
+       padding-right: 30px;
+       margin-top: 30px;
+       cursor: pointer;
+}
+
+.menu{
+       list-style-type: none;
+       width: 100%;
+       
+       
+}
+.menu li{
+       font-family: 'Times New Roman', Times, serif;
+       text-decoration: none;
+       margin-top: 40px;
+       font-size: 30px;
+       width: 100%;
+       font-weight: 600;
+       transition: all .02s linear;
+       height: 50px;
+       margin-left: 20px;
+       
+}
+.menu li a{
+       text-decoration: none;
+       color: #ff6700;
+}
+
+.menu li:hover{
+       background-color: #c2d6c2;
+       padding-left: 5px;
+}
+@media (max-width: 659px){
+       .sidebar{
+              z-index: 10;
+              width: 100%;
+       }
+       
+}
