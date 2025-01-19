@@ -1,8 +1,6 @@
 // Selecting buttons
 const resetBtn = document.querySelector(".reset-button");
 const modal = document.getElementById("modal");
-console.log('Modal',modal);
-
 const closeModalBtn = document.querySelector(".close-btn");
 
 let board;
@@ -75,8 +73,8 @@ function update() {
   console.log("Update called, gameOver state: ", gameOver);
 
   if (gameOver) {
-//     resetBtn.classList.remove("hide");
-modal.style.display = "flex";
+    //     resetBtn.classList.remove("hide");
+    modal.style.display = "flex";
     return;
   }
 
@@ -121,7 +119,6 @@ function moveDino(e) {
     resetGame();
     return;
   }
-
 
   if ((e.code == "Space" || e.code == "ArrowUp") && dino.y == dinoY) {
     velocityY = -10;
@@ -183,12 +180,10 @@ function resetGame() {
   requestAnimationFrame(update);
 }
 
-function closeModal () {
-         modal.style.display = "none";
-       
+function closeModal() {
+  modal.style.display = "none";
 }
 
 window.addEventListener("click", closeModal);
-resetBtn.addEventListener('click', resetGame)
-closeModalBtn.addEventListener('click',closeModal )
-
+resetBtn.addEventListener("click", resetGame);
+closeModalBtn.addEventListener("click", closeModal);
