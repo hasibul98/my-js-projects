@@ -2,6 +2,7 @@
 const resetBtn = document.querySelector(".reset-button");
 const modal = document.getElementById("modal");
 const closeModalBtn = document.querySelector(".close-btn");
+const scoreCard = document.getElementById("score-card");
 
 let board;
 let boardWidth = 750;
@@ -73,7 +74,6 @@ function update() {
   console.log("Update called, gameOver state: ", gameOver);
 
   if (gameOver) {
-    //     resetBtn.classList.remove("hide");
     modal.style.display = "flex";
     return;
   }
@@ -112,6 +112,7 @@ function update() {
   context.font = "20px courier";
   score++;
   context.fillText(score, 5, 20);
+  scoreCard.innerHTML = "Score: " + score
 }
 
 function moveDino(e) {
@@ -184,6 +185,9 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-window.addEventListener("click", closeModal);
+window.addEventListener("click", () => {
+       closeModal();
+       resetBtn();
+});
 resetBtn.addEventListener("click", resetGame);
 closeModalBtn.addEventListener("click", closeModal);
