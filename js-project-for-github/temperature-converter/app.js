@@ -4,7 +4,7 @@ const kelvinEl = document.getElementById("kelvin");
 
 function computeTemp(event) {
   const currentValue = parseFloat(event.target.value);
-
+ 
   if (currentValue !== "") {
     switch (event.target.name) {
       case "celsius":
@@ -30,6 +30,21 @@ function computeTemp(event) {
 
   console.log(celsiusEl.value, fahrenheitEl.value, kelvinEl.value);
 }
+window.onload=()=>{
+       main();
+}
+function main(){
+       document.addEventListener('click',()=>{
+              console.log(event.target.name);
+       })
+       
+}
+
+
+
+
+
+
 fahrenheitEl.addEventListener("input", computeTemp);
 celsiusEl.addEventListener("input", computeTemp);
 kelvinEl.addEventListener("input", computeTemp);
