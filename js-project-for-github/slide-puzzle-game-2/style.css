@@ -1,17 +1,19 @@
 body{
        font-family: Arial, Helvetica, sans-serif;
        text-align: center;
+       overflow-x: hidden;
 }
+
 #board{
        width: 403px;
-       height: 403px;
+       height: auto;
        border: 2px solid purple;
        margin: 0 auto;
        display: flex;
        flex-wrap: wrap;
 }
 #board img{ 
-       width: 79px;
+       width: 19.5%;
        height: 79px;
        border: 0.5px solid lightblue;
 
@@ -19,7 +21,7 @@ body{
 
 #pieces{
        width: 1048px;
-       height: 160px;
+       height: auto;
        border: 2px solid black;
        margin: 0 auto;
        display: flex;
@@ -30,5 +32,39 @@ body{
        height: 79px;
        border: 0.5px solid lightblue;
 
+}
+@media (max-width: 768px) {
+       #board {
+              width: 100%;
+       }
+       #board img {
+              width: 24%;
+              height: auto;
+       }
+       #pieces {
+              width: 100%;
+       }
+       #pieces img {
+              /* width: 84px; */
+              width: 14%;
+              height: 79px;
+       }
+}
+
+@media (max-width: 480px) {
+       #board {
+              width: 100%;
+       }
+       #board img {
+              width: 32%;
+              height: auto;
+       }
+       #pieces {
+              width: 100%;
+       }
+       #pieces img {
+              width: 24%;
+              height: 79px;
+       }
 }
 
