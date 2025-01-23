@@ -52,7 +52,7 @@ body {
     background: #555;
   }
   #board {
-    width: 100%;
+    width: 70%;
   }
   #board img {
     width: 24%;
@@ -68,7 +68,7 @@ body {
 
 @media (max-width: 480px) {
   #board {
-    width: 100%;
+    width: 70%;
   }
   #board img {
     width: 32%;
