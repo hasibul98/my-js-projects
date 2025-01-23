@@ -83,11 +83,15 @@ function dragEnd(){
 }
 
 function touchStart(e){
-       currTile = e.target;
-       e.preventDefault();
+       if (e.target.tagName === 'IMG') {
+              e.preventDefault();
+          }
 }
 function touchMove(e){
-       e.preventDefault();
+       if (e.target.tagName === 'IMG') {
+              currTile = e.target;
+              e.preventDefault();
+          }
 }
 function touchEnd(e){
  let touch = e.changedTouches[0]; //e.changedTouches[0]
@@ -96,6 +100,7 @@ function touchEnd(e){
 if(dropTarget && dropTarget.tagName === 'IMG'){
        otherTile = dropTarget;
        swapImages();
+       
 }
 
 }
