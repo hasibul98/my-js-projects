@@ -82,29 +82,28 @@ function dragEnd(){
        swapImages();
 }
 
-function touchStart(e){
+function touchStart(e) {
        if (e.target.tagName === 'IMG') {
-              currTile = e.target;
-              e.preventDefault();
-          }
-}
-function touchMove(e){
-       if (e.target.tagName === 'IMG') {
-              
-              e.preventDefault();
-          }
-}
-function touchEnd(e){
- let touch = e.changedTouches[0]; //e.changedTouches[0]
-
- let dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
-if(dropTarget && dropTarget.tagName === 'IMG'){
-       otherTile = dropTarget;
-       swapImages();
+           currTile = e.target;
+       }
+   }
+   
+   function touchMove(e) {
        
-}
-
-}
+       if (e.target.tagName === 'IMG') {
+           e.preventDefault();
+       }
+   }
+   
+   function touchEnd(e) {
+       let touch = e.changedTouches[0];
+       let dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+       if (dropTarget && dropTarget.tagName === 'IMG') {
+           otherTile = dropTarget;
+           swapImages();
+       }
+   }
+   
 
 function swapImages(){
        if (currTile.src.includes("blank")) {
