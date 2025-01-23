@@ -20,9 +20,11 @@ for(let i = 1; i <= rows * columns; i++){
 }
 pieces = ShuffleArray(pieces);
 for(let i = 0; i < pieces.length; i++  ){
-       imgurl = './images/'+pieces[i]+'.jpg';
+      let imgurl = './images/'+pieces[i]+'.jpg';
        imgCollect(piecesEl, imgurl);
 }
+
+// let imgurl = './images/'+pieces[i]+'.jpg';
 
 }
 
@@ -120,3 +122,5 @@ function swapImages(){
        document.getElementById('turn').innerText = turns;
 
 }
+
+
