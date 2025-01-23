@@ -84,12 +84,13 @@ function dragEnd(){
 
 function touchStart(e){
        if (e.target.tagName === 'IMG') {
+              currTile = e.target;
               e.preventDefault();
           }
 }
 function touchMove(e){
        if (e.target.tagName === 'IMG') {
-              currTile = e.target;
+              
               e.preventDefault();
           }
 }
