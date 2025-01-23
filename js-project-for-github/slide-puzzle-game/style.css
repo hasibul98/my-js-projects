@@ -1,82 +1,23 @@
-/* General styles for all screen sizes */
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   color: #0c67ae;
-  margin: 0;
-  padding: 0;
 }
-
 #title {
-  width: 90%; /* Make the title image width relative */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 400px; /* Limit maximum size */
-  margin: 20px auto;
+  width: 400px;
+  height: 150px;
 }
-
 #board {
-  width: 90%; /* Make the board width relative */
-  max-width: 360px; /* Set a maximum width */
-  height: auto; /* Let the height adjust automatically */
-  aspect-ratio: 1; /* Maintain a square shape */
+  width: 360px;
+  height: 360px;
   background-color: lightblue;
   border: 10px solid #0c67ae;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
-
 #board img {
-  width: 30%; /* Images take up 30% of the board width */
-  height: auto; /* Maintain aspect ratio */
+  width: 118px;
+  height: 118px;
   border: 1px solid #0c67ae;
-  box-sizing: border-box; /* Include padding/border in width/height */
-}
-
-h1 {
-  font-size: 1.2em; /* Adjust font size for smaller screens */
-}
-
-/* Styles for smaller screens (mobile devices) */
-@media screen and (max-width: 768px) {
-  #title {
-    width: 70%;
-    max-width: 300px;
-  }
-
-  #board {
-    width: 90%;
-    max-width: 300px;
-    border-width: 5px; /* Reduce border size for smaller screens */
-  }
-
-  #board img {
-    width: 32%; /* Adjust size for smaller screens */
-  }
-
-  h1 {
-    font-size: 1em; /* Slightly smaller font size */
-  }
-}
-
-/* Styles for very small screens (e.g., smartphones) */
-@media screen and (max-width: 480px) {
-  #title {
-    width: 80%;
-    max-width: 250px;
-  }
-
-  #board {
-    width: 90%;
-    max-width: 240px;
-    border-width: 5px;
-  }
-
-  #board img {
-    width: 33%; /* Ensure 3 items per row on very small screens */
-  }
-
-  h1 {
-    font-size: 0.9em;
-  }
 }
