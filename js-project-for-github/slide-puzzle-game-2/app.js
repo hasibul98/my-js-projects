@@ -84,12 +84,14 @@ function dragEnd(){
 
 function touchStart(e){
        currTile = e.target;
+       e.preventDefault();
 }
 function touchMove(e){
        e.preventDefault();
 }
 function touchEnd(e){
- let touch = e.changeTouches[0];
+ let touch = e.changedTouches[0]; //e.changedTouches[0]
+
  let dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
 if(dropTarget && dropTarget.tagName === 'IMG'){
        otherTile = dropTarget;
