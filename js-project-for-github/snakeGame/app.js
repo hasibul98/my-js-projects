@@ -127,9 +127,7 @@ function moveSnake(e){
        }
        if(velocityX > 0 || velocityY > 0 || velocityX < 0 || velocityY < 0){
               messageEl.innerText = 'press space for puse this game';
-              // if(gameOver == false){
-              //        messageEl.innerText = 'press space for puse this game';
-              // }
+              
               
        }
        
