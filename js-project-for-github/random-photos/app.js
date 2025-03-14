@@ -19,7 +19,11 @@ function loadImages(){
                      img.src = `https://picsum.photos/200/300?random=${imageCount++}`;
                      img.loading = 'lazy';
                      img.className = 'fade-in';
-                                          
+                     img.addEventListener('click', (e)=>{
+                            modal.style.display = 'block';
+                            // modalImg.src = img.src;
+                            modalImg.src = e.target.src;
+                     })                     
                      imgWrapper.appendChild(img);
                     
                      imageContainer.appendChild(imgWrapper);
