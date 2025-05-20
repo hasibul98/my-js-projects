@@ -44,14 +44,6 @@ fetch( `words.txt` )
               // console.log( getRandomWord() );
        } );
 
-// async function wordsData ()
-// {
-//        const res = await fetch( `words.txt` );
-//        const text = await res.text();
-// console.log( data );
-// words = text.split( '\n' ).map( w => w.trim() ).filter( Boolean );
-// console.log( words );
-// }
 
 
 function getRandomWord ()
