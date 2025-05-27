@@ -62,3 +62,11 @@ function checkNumber ( msg )
 }
 
 recognition.addEventListener( 'end', () => recognition.start() );
+
+document.body.addEventListener( 'click', e =>
+{
+       if ( e.target.id == 'play-again' )
+       {
+              window.location.reload();
+       }
+} );
