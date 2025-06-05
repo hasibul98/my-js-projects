@@ -1,1 +1,1 @@
-# [visit thsi project](https://theme-clock543.netlify.app/)
+# [visit this project](https://theme-clock543.netlify.app/)
