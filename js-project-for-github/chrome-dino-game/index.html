@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome dinosor Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1>Chrome dinosor Game</h1>
+      <h2>Press Space to Restart</h2>
+    </div>
+    <canvas id="board"></canvas>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h1 id="game-over-text">Game Over</h1>
+        <h2 id="score-card"></h2>
+        <button class="reset-button">Restart</button>
+      </div>
+    </div>
+  </body>
+</html>
